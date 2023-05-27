@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+
+#game-window{
+    position: relative;
+    display: inline-block;
+}
+
+#fighting-info{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8px 5px;
+}
+
+.health-bar{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    transition: width .35s;
+}
+
+.player-health-contain{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.player-health{
+
+    background-color: #B65252 !important;
+
+}
+
+.enemy-health{
+
+    background-color: #5852B6 !important;
+
+}
+
+.health-contain{
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+.after{
+    position: absolute;
+    height: 60px;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 0;
+}
+
+.timer{
+    background-color: red;
+    width: 100px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.timer h3{
+    font-size: 28px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.game-result{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+}
